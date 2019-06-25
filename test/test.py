@@ -4,12 +4,12 @@ import numpy as np
 
 components = []
 components.append(rt.Mirror(
-			  aperture=50,
-			  pos=[100,25],
+			  aperture=200,
+			  pos=[100,-100],
 			  theta=np.pi/2))
 
 rays = []
-rays.append([-10, 0, np.pi/12])
+rays.append([-20, 100, -np.pi/3])
 ray_bundles = rt.propagate_rays(components, rays)
 
 
@@ -21,13 +21,13 @@ colors = 'r'
 canvas = vis.Canvas([-200, 600], [-100, 100])
 
 # Draw the components
-canvas.draw_components(components)
+#canvas.draw_components(components)
 
 # Draw the rays
 canvas.draw_rays(ray_bundles, colors)
 
 # Show the system
-canvas.show()
+#canvas.show()
 
 # Save a copy
 canvas.save('example.png')
