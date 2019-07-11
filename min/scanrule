@@ -1,0 +1,9 @@
+velocity:4900
+aperturesize:16
+aperturefrom:1
+apertureto:16
+scananglefrom:-75
+scanangleto:75
+focus:30
+dynfocusenable=false
+beacount:128
